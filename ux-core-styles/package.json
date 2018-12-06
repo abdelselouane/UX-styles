@@ -1,0 +1,72 @@
+{
+  "_args": [
+    [
+      "ux-core-styles@2.1.0",
+      "/Users/AXS4JZD/Desktop/RepairDepot-UI/client"
+    ]
+  ],
+  "_development": true,
+  "_from": "ux-core-styles@2.1.0",
+  "_id": "ux-core-styles@2.1.0",
+  "_inBundle": false,
+  "_integrity": "sha1-+XPyQxec7ML5rZeQFwfxpJhkpss=",
+  "_location": "/ux-core-styles",
+  "_phantomChildren": {
+    "amdefine": "1.0.1",
+    "graceful-readlink": "1.0.1"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "ux-core-styles@2.1.0",
+    "name": "ux-core-styles",
+    "escapedName": "ux-core-styles",
+    "rawSpec": "2.1.0",
+    "saveSpec": null,
+    "fetchSpec": "2.1.0"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://npm.artifactory.homedepot.com/artifactory/api/npm/npm/ux-core-styles/-/ux-core-styles-2.1.0.tgz",
+  "_spec": "2.1.0",
+  "_where": "/Users/AXS4JZD/Desktop/RepairDepot-UI/client",
+  "author": {
+    "name": "Matthew McElhaney",
+    "email": "matthew_mcelhaney@homedepot.com"
+  },
+  "dependencies": {
+    "clean-css": "^3.4.19",
+    "gulp": "^3.9.1"
+  },
+  "description": "Standardized styles for Typography, Cards, Colors and Buttons provided by Home Depot UX",
+  "devDependencies": {
+    "gulp-bump": "^2.4.0",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.3.2"
+  },
+  "homepage": "https://ux.homedepot.com/dev",
+  "keywords": [
+    "colors",
+    "typography",
+    "buttons",
+    "cards",
+    "ux"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "name": "ux-core-styles",
+  "private": false,
+  "publishConfig": {
+    "registry": "https://bower.artifactory.homedepot.com/artifactory/api/npm/npm-local"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.homedepot.com/ux/ux-core-styles.git"
+  },
+  "scripts": {
+    "prepublish": "gulp"
+  },
+  "version": "2.1.0"
+}

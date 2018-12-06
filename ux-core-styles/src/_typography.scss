@@ -1,0 +1,343 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,600,600italic);
+
+/*FONT FAMILY*/
+$font-family-text: "Open Sans", sans-serif;
+
+/*FONT WEIGHT*/
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-italic: 400italic;
+$font-weight-bold: 600;
+
+/*FONT SIZE*/
+$font-size-x-small: 12px;
+$font-size-small: 14px;
+$font-size-regular: 16px;
+$font-size-large: 24px;
+$font-size-x-large: 28px;
+$font-size-xx-large: 30px;
+$font-size-xxx-large: 45px;
+$font-size-xxxx-large: 50px;
+$font-size-xxxxx-large: 96px;
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $font-family-text;
+    font-size: $font-size-regular;
+    font-weight: $font-weight-regular;
+    font-style: normal;
+    line-height: $font-size-large;
+    color: $black16;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+        -ms-font-smoothing: antialiased !important;
+}
+
+strong {
+    font-weight: $font-weight-bold;
+    color: $black18;
+}
+
+em {
+    font-weight: $font-weight-italic;
+    font-style: italic;
+    color: $black18;
+}
+
+a:link,
+a:visited {
+    font-weight: $font-weight-regular;
+    color: $orange;
+    text-decoration: none;
+    font-size: $font-size-regular;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@mixin border {
+    display: block;
+    border-bottom: 1px solid $black14;
+    padding-bottom: 5px;
+    position: relative;
+
+    &:after {
+        position: absolute;
+        display: block;
+        box-sizing: border-box;
+        background-color: $orange;
+        content: " ";
+        width: 25%;
+        height: 1px;
+        bottom: -1px;
+        left: 0;
+    }
+}
+
+@mixin subhead {
+    color: $black15;
+}
+
+h1 {
+    font-weight: $font-weight-light;
+    font-size: $font-size-xxx-large;
+    line-height: $font-size-xxxx-large;
+    letter-spacing: -0.01em;
+    margin: 0 0 30px -1px;
+
+    &.border {
+        @include border;
+    }
+
+    &.subhead {
+        @include subhead;
+    }
+
+    small {
+        font-size: $font-size-x-large;
+        color: $black15;
+    }
+}
+
+h2 {
+    font-weight: $font-weight-regular;
+    font-size: $font-size-x-large;
+    line-height: $font-size-xx-large;
+    letter-spacing: -0.01em;
+    margin: 20px 0;
+
+    &.border {
+        @include border;
+    }
+
+    &.subhead {
+        @include subhead;
+    }
+
+    small {
+        font-weight: $font-weight-light;
+        font-size: $font-size-large;
+        color: $black15;
+    }
+}
+
+h3 {
+    font-weight: $font-weight-bold;
+    font-size: 18px;
+    line-height: $font-size-x-large;
+    letter-spacing: -0.01em;
+    margin: 10px 0;
+
+    &.border {
+        @include border;
+    }
+
+    &.subhead {
+        @include subhead;
+    }
+
+    small {
+        font-weight: $font-weight-regular;
+        font-size: $font-size-regular;
+        color: $black15;
+    }
+}
+
+h4 {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-regular;
+    line-height: $font-size-large;
+    letter-spacing: -0.01em;
+    margin: 10px 0;
+
+    &.border {
+        @include border;
+    }
+
+    &.subhead {
+        @include subhead;
+    }
+
+    small {
+        font-weight: $font-weight-regular;
+        font-size: $font-size-small;
+        color: $black15;
+    }
+}
+
+h5 {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-small;
+    line-height: 18px;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    margin: 10px 0;
+
+    &.border {
+        @include border;
+    }
+
+    &.subhead {
+        @include subhead;
+    }
+
+    small {
+        font-weight: $font-weight-regular;
+        font-size: $font-size-x-small;
+        color: $black15;
+        text-transform: none;
+    }
+}
+
+h6 {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-x-small;
+    line-height: $font-size-regular;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    margin: 10px 0;
+
+    &.border {
+        @include border;
+    }
+
+    &.subhead {
+        @include subhead;
+    }
+
+    small {
+        font-weight: $font-weight-regular;
+        font-size: 10px;
+        color: $black15;
+        text-transform: none;
+    }
+}
+
+li {
+    margin-left: 40px;
+}
+
+ul {
+    list-style-type: disc;
+    list-style-position: outside!important;
+    margin: 0;
+    padding: 0;
+}
+
+ul li ul {
+    list-style-type: circle;
+    list-style-position: outside!important;
+    margin: 0;
+    padding: 0;
+}
+
+ul li ul li ul {
+    list-style-type: square;
+    list-style-position: outside!important;
+    margin: 0;
+    padding: 0;
+}
+
+ul li ul li ul {
+    list-style-type: disc;
+    list-style-position: outside!important;
+    margin: 0;
+    padding: 0;
+}
+
+ul li ul li ul li ul {
+    list-style-type: circle;
+    list-style-position: outside!important;
+    margin: 0;
+    padding: 0;
+}
+
+ul li ul li ul li ul li ul {
+    list-style-type: disc;
+    list-style-position: outside!important;
+    margin: 0;
+    padding: 0;
+}
+
+ol {
+    list-style-type: decimal;
+    list-style-position: outside!important;
+    margin: 0;
+    padding: 0;
+}
+
+ol li ol {
+    list-style-type: lower-alpha;
+    list-style-position: outside!important;
+    margin: 0;
+    padding: 0;
+}
+
+ol li ol li ol {
+    list-style-type: lower-roman;
+    list-style-position: outside!important;
+    margin: 0;
+    padding: 0;
+}
+
+ol li ol li ol li ol {
+    list-style-type: decimal;
+    list-style-position: outside!important;
+    margin: 0;
+    padding: 0;
+}
+
+ol li ol li ol li ol li ol {
+    list-style-type: lower-alpha;
+    list-style-position: outside!important;
+    margin: 0;
+    padding: 0;
+}
+
+ol li ol li ol li ol li ol li ol {
+    list-style-type: lower-roman;
+    list-style-position: outside!important;
+    margin: 0;
+    padding: 0;
+}
+
+blockquote {
+    box-sizing: border-box;
+    border-left: 1px solid $black14;
+    font-weight: $font-weight-italic;
+    font-style: italic;
+    font-size: $font-size-large;
+    line-height: $font-size-xx-large;
+    padding: 20px;
+    margin-left: 30px;
+}
+
+cite {
+    display: block;
+    color: #999999;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+p.terms {
+    background-color: #FCF8D5;
+    font-size: 0.750em;/*12px*/
+    line-height: 1.125em;/*18px*/
+    padding: 20px;
+}
+
+p.legal {
+    color: $black16;
+    font-size: 0.750em;/*12px*/
+    line-height: 1.125em;/*18px*/
+}

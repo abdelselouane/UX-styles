@@ -1,0 +1,87 @@
+{
+  "_args": [
+    [
+      "ux-styleguide@2.16.2",
+      "/Users/AXS4JZD/Desktop/RepairDepot-UI/client"
+    ]
+  ],
+  "_development": true,
+  "_from": "ux-styleguide@2.16.2",
+  "_id": "ux-styleguide@2.16.2",
+  "_inBundle": false,
+  "_integrity": "sha1-i75EMUwU93QEdvUaUtI4XwGq7RI=",
+  "_location": "/ux-styleguide",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "ux-styleguide@2.16.2",
+    "name": "ux-styleguide",
+    "escapedName": "ux-styleguide",
+    "rawSpec": "2.16.2",
+    "saveSpec": null,
+    "fetchSpec": "2.16.2"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://npm.artifactory.homedepot.com/artifactory/api/npm/npm/ux-styleguide/-/ux-styleguide-2.16.2.tgz",
+  "_spec": "2.16.2",
+  "_where": "/Users/AXS4JZD/Desktop/RepairDepot-UI/client",
+  "author": {
+    "name": "Matthew McElhaney",
+    "email": "matthew_mcelhaney@homedepot.com"
+  },
+  "dependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.14.0"
+  },
+  "description": "Global compilation of all available UX packages",
+  "devDependencies": {
+    "clean-css": "^3.4.19",
+    "flatpickr": "^4.1.2",
+    "gulp": "^3.9.1",
+    "gulp-bump": "^2.4.0",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-concat": "^2.6.0",
+    "gulp-insert": "^0.5.0",
+    "gulp-replace": "^0.6.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.1",
+    "ux-core-styles": "^2.0.1",
+    "ux-date-picker": "^1.0.1",
+    "ux-inputs": "^2.0.0",
+    "ux-layouts": "^2.0.1",
+    "ux-loader-button": "^1.0.3",
+    "ux-messaging": "^2.0.2",
+    "ux-navigation": "^3.0.0",
+    "ux-progress-indicator": "^1.0.2",
+    "ux-tables": "^1.1.0",
+    "uxicon": "^2.3.0"
+  },
+  "engines": {
+    "node": ">=6.0.0",
+    "yarn": ">=1.2.1"
+  },
+  "homepage": "https://ux-styleguide.apps-np.homedepot.com",
+  "keywords": [
+    "ux",
+    "styleguide"
+  ],
+  "license": "Apache-2.0",
+  "main": "dist/ux-styleguide.min.js",
+  "name": "ux-styleguide",
+  "private": false,
+  "publishConfig": {
+    "registry": "https://bower.artifactory.homedepot.com/artifactory/api/npm/npm-local"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.homedepot.com/ux/ux-styleguide.git"
+  },
+  "scripts": {
+    "prepublish": "gulp",
+    "start": "NODE_ENV=production node server.js --use_strict"
+  },
+  "version": "2.16.2"
+}
